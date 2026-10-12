@@ -91,7 +91,7 @@ p { margin: 0 0 1em; }
 a { color: var(--brand); }
 svg { display: block; }
 
-.container { width: 100%; max-width: 1160px; margin: 0 auto; padding: 0 16px; }
+.container { width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 16px; }
 .container.narrow { max-width: 780px; }
 @media (min-width: 640px) { .container { padding: 0 24px; } }
 
@@ -192,8 +192,11 @@ svg { display: block; }
     radial-gradient(60% 50% at 85% 10%, color-mix(in srgb, var(--brand) 18%, transparent), transparent 70%),
     radial-gradient(40% 40% at 0% 100%, color-mix(in srgb, var(--brand) 10%, transparent), transparent 70%);
 }
-.hero-grid { display: grid; gap: 56px; align-items: center; }
-@media (min-width: 960px) { .hero-grid { grid-template-columns: 1.05fr 1fr; } .hero { padding: 96px 0 112px; } }
+.hero-grid { display: grid; gap: 48px; align-items: center; }
+@media (min-width: 960px) {
+  .hero-grid { grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr); gap: 56px; }
+  .hero { padding: 80px 0 96px; }
+}
 
 .eyebrow {
   display: inline-block; font-size: .8rem; font-weight: 700; text-transform: uppercase; letter-spacing: .08em;
@@ -207,43 +210,17 @@ svg { display: block; }
 .hero-points { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 10px 22px; color: var(--text-muted); font-size: .95rem; }
 .hero-points li::before { content: "✓"; color: var(--done); font-weight: 700; margin-right: 6px; }
 
-/* mock dashboard */
-.hero-visual { position: relative; padding-bottom: 40px; }
-.mock-window { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; box-shadow: var(--shadow); overflow: hidden; }
-.mock-bar { display: flex; gap: 6px; padding: 12px 14px; border-bottom: 1px solid var(--border); background: var(--bg-alt); }
-.mock-bar span { width: 10px; height: 10px; border-radius: 50%; background: var(--border); }
-.mock-body { padding: 18px; }
-.mock-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-bottom: 16px; }
-.mock-stats div { background: var(--bg-alt); border-radius: 10px; padding: 12px; }
-.mock-stats small { display: block; font-size: .72rem; color: var(--text-muted); }
-.mock-stats strong { font-size: 1.4rem; }
-.mock-list { display: grid; gap: 8px; }
-.mock-row { display: flex; align-items: center; gap: 12px; padding: 12px; border: 1px solid var(--border); border-radius: 10px; }
-.mock-row > div { flex: 1; min-width: 0; }
-.mock-row b { display: block; font-size: .92rem; }
-.mock-row small { color: var(--text-muted); font-size: .78rem; }
-.dot { width: 10px; height: 10px; border-radius: 50%; flex: none; }
-.dot-urgent { background: var(--urgent); } .dot-progress { background: var(--progress); } .dot-done { background: var(--done); }
-.pill { font-style: normal; font-size: .72rem; font-weight: 700; padding: 4px 9px; border-radius: 999px; white-space: nowrap; }
-.pill-urgent { color: var(--urgent); background: var(--urgent-soft); }
-.pill-progress { color: var(--progress); background: var(--progress-soft); }
-.pill-done { color: var(--done); background: var(--done-soft); }
-
-.mock-phone {
-  position: absolute; right: -6px; bottom: 0; width: 150px;
-  background: var(--surface); border: 1px solid var(--border); border-radius: 22px;
-  box-shadow: var(--shadow); padding: 16px; text-align: center;
-  animation: float 6s ease-in-out infinite;
+/* real dashboard screenshot */
+.hero-visual { margin: 0; }
+.shot-frame {
+  background: var(--surface); border: 1px solid var(--border); border-radius: 14px;
+  box-shadow: 0 2px 4px rgba(16, 24, 40, .06), 0 30px 60px -20px rgba(16, 24, 40, .35);
+  overflow: hidden;
 }
-.mock-phone small { display: block; color: var(--text-muted); font-size: .72rem; margin-top: 8px; }
-.mock-phone b { font-size: .85rem; }
-.qr {
-  width: 84px; height: 84px; margin: 0 auto; border-radius: 6px;
-  background: repeating-conic-gradient(var(--text) 0 25%, var(--surface) 0 50%) 0 0 / 14px 14px;
-  border: 6px solid var(--surface); outline: 2px solid var(--text);
-}
-@media (max-width: 520px) { .mock-phone { width: 120px; right: 4px; } .qr { width: 64px; height: 64px; } }
-@keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+.shot-bar { display: flex; gap: 6px; padding: 10px 14px; border-bottom: 1px solid var(--border); background: var(--bg-alt); }
+.shot-bar span { width: 10px; height: 10px; border-radius: 50%; background: var(--border); }
+.shot-frame img { display: block; width: 100%; height: auto; }
+.hero-visual figcaption { text-align: center; color: var(--text-muted); font-size: .9rem; margin-top: 14px; }
 
 /* ---------- Sections ---------- */
 .section { padding: 80px 0; }
