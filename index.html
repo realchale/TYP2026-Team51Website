@@ -1,11 +1,14 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Maintenant · Team 51</title>
-  <meta name="description" content="Maintenant is a Third Year Project by Team 51: a smart residence maintenance system for tracking assets, reporting faults by QR code and managing repairs.">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23465fff'/%3E%3Cpath d='M8 23V10l8 7 8-7v13' fill='none' stroke='white' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <title>MainTenant · Team 51</title>
+  <meta name="description"
+    content="MainTenant is a Third Year Project by Team 51: a smart residence maintenance system for tracking assets, reporting faults by QR code and managing repairs.">
+  <link rel="icon"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23465fff'/%3E%3Cpath d='M8 23V10l8 7 8-7v13' fill='none' stroke='white' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
   <link rel="stylesheet" href="styles.css">
   <script>
     // Enables scroll-reveal styles only when JS runs; apply saved theme before paint
@@ -13,20 +16,24 @@
     try {
       var t = localStorage.getItem("maintenant-theme");
       if (t) document.documentElement.setAttribute("data-theme", t);
-    } catch (e) {}
+    } catch (e) { }
   </script>
 </head>
+
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
   <!-- ============ HEADER ============ -->
   <header class="site-header" id="top">
     <div class="container nav">
-      <a href="#top" class="brand" aria-label="Maintenant home">
+      <a href="#top" class="brand" aria-label="MainTenant home">
         <span class="brand-mark" aria-hidden="true">
-          <svg viewBox="0 0 32 32"><rect width="32" height="32" rx="8"/><path d="M8 23V10l8 7 8-7v13"/></svg>
+          <svg viewBox="0 0 32 32">
+            <rect width="32" height="32" rx="8" />
+            <path d="M8 23V10l8 7 8-7v13" />
+          </svg>
         </span>
-        Maintenant
+        MainTenant
       </a>
 
       <nav class="nav-links" id="nav-links" aria-label="Main">
@@ -38,10 +45,17 @@
 
       <div class="nav-actions">
         <button class="icon-btn" id="theme-toggle" type="button" aria-label="Toggle dark mode">
-          <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
-          <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="4" />
+            <path
+              d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4" />
+          </svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z" />
+          </svg>
         </button>
-        <button class="icon-btn menu-toggle" id="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+        <button class="icon-btn menu-toggle" id="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false"
+          aria-controls="nav-links">
           <span></span><span></span><span></span>
         </button>
       </div>
@@ -56,18 +70,18 @@
           <span class="eyebrow">Third Year Project 2026 · Team 51</span>
           <h1>Every fault reported. <span class="accent">Every repair tracked.</span></h1>
           <p class="lead">
-            Maintenant is our third-year project: a smart residence maintenance system that replaces
-            WhatsApp groups, paper logbooks and lost spreadsheets with one place where residents report
-            problems, artisans fix them, and admins see everything.
+            MainTenant brings mainenance reporting, asset tracking and repair
+            management into one system. From the moment a fault is reported to
+            its resolution, administrators, artisans and residents can see exactly what's happening.
           </p>
           <div class="hero-ctas">
             <a href="#features" class="btn btn-primary">Explore the project</a>
             <a href="#team" class="btn btn-ghost">Meet the team</a>
           </div>
           <ul class="hero-points">
-            <li>Scan a QR code to report</li>
-            <li>Live repair status</li>
-            <li>Full asset history</li>
+            <li>Centralised fault reporting</li>
+            <li>Intelligent artisan assignment</li>
+            <li>Asset history and compliance tracking</li>
           </ul>
         </div>
 
@@ -75,7 +89,7 @@
           <div class="shot-frame">
             <div class="shot-bar" aria-hidden="true"><span></span><span></span><span></span></div>
             <img src="images/dashboard.jpg" width="1186" height="488"
-                 alt="The Maintenant admin Operational Dashboard, showing KPI cards, work-order and compliance status charts, and a repair trend graph.">
+              alt="The MainTenant admin Operational Dashboard, showing KPI cards, work-order and compliance status charts, and a repair trend graph.">
           </div>
           <figcaption>The admin Operational Dashboard from our live build.</figcaption>
         </figure>
@@ -88,13 +102,26 @@
         <div class="section-head reveal">
           <span class="eyebrow">The problem we set out to solve</span>
           <h2>Residence maintenance is still run on chat messages and paper</h2>
-          <p>When reports get lost, small faults turn into expensive breakdowns and nobody knows who was responsible. That's the gap our project addresses.</p>
+          <p>When reports get lost, small faults turn into expensive breakdowns and nobody knows who was responsible.
+            That's the gap our project addresses.</p>
         </div>
         <div class="problem-grid">
-          <div class="problem-card reveal"><h3>Lost reports</h3><p>Faults sent over WhatsApp get buried and never reach the right person.</p></div>
-          <div class="problem-card reveal"><h3>No accountability</h3><p>No record of who was assigned, when they started, or whether the job was done.</p></div>
-          <div class="problem-card reveal"><h3>Unidentified assets</h3><p>"The geyser upstairs" isn't an asset ID. Repairs get delayed by guesswork.</p></div>
-          <div class="problem-card reveal"><h3>Reactive, not preventive</h3><p>Without service history, equipment only gets attention once it fails.</p></div>
+          <div class="problem-card reveal">
+            <h3>Lost reports</h3>
+            <p>Faults sent over WhatsApp get buried and never reach the right person.</p>
+          </div>
+          <div class="problem-card reveal">
+            <h3>No accountability</h3>
+            <p>No record of who was assigned, when they started, or whether the job was done.</p>
+          </div>
+          <div class="problem-card reveal">
+            <h3>Unidentified assets</h3>
+            <p>"The geyser upstairs" isn't an asset ID. Repairs get delayed by guesswork.</p>
+          </div>
+          <div class="problem-card reveal">
+            <h3>Reactive, not preventive</h3>
+            <p>Without service history, equipment only gets attention once it fails.</p>
+          </div>
         </div>
       </div>
     </section>
@@ -108,52 +135,156 @@
         </div>
         <div class="feature-grid">
           <article class="feature reveal">
-            <div class="feature-icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><path d="M14 14h3v3h-3zM20 14v.01M14 20h.01M17 20h4v-3"/></svg></div>
-            <h3>QR &amp; NFC asset tags</h3>
-            <p>Every geyser, pump, lift and light gets a unique ID. Residents scan it and the report already knows what and where.</p>
+            <div class="feature-icon"><svg viewBox="0 0 24 24">
+                <rect x="3" y="3" width="7" height="7" />
+                <rect x="14" y="3" width="7" height="7" />
+                <rect x="3" y="14" width="7" height="7" />
+                <path d="M14 14h3v3h-3zM20 14v.01M14 20h.01M17 20h4v-3" />
+              </svg></div>
+            <h3>NFC Communal Asset Identification</h3>
+            <p>
+              Identify shared residence assets by tapping their NFC tags.
+              Access relevant asset information and simplify maintenance
+              reporting for communal facilities such as elevators,
+              washing machines, projectors and shared TVs.
+            </p>
           </article>
           <article class="feature reveal">
-            <div class="feature-icon"><svg viewBox="0 0 24 24"><path d="M12 9v4M12 17h.01"/><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/></svg></div>
+            <div class="feature-icon"><svg viewBox="0 0 24 24">
+                <path d="M12 9v4M12 17h.01" />
+                <path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z" />
+              </svg></div>
             <h3>Fault reporting</h3>
-            <p>A guided form with category, priority from Low to Urgent, and a description. Residents can follow it until it's closed.</p>
+            <p>A guided form with category, priority from Low to Urgent, and a description. Residents can follow it
+              until it's closed.</p>
           </article>
           <article class="feature reveal">
-            <div class="feature-icon"><svg viewBox="0 0 24 24"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.4-.6-.6-2.4z"/></svg></div>
-            <h3>Work order assignment</h3>
-            <p>Admins assign reports to available artisans by specialty. Artisans update status: In Progress, Awaiting Parts, Completed.</p>
+            <div class="feature-icon"><svg viewBox="0 0 24 24">
+                <path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.4-.6-.6-2.4z" />
+              </svg></div>
+            <h3>Work Order Assignment</h3>
+            <p>Assign maintenance reports according to artisan
+              specialisation and available capacity. Queue processing
+              helps manage pending assignments when artisans reach
+              their workload limits.</p>
           </article>
           <article class="feature reveal">
-            <div class="feature-icon"><svg viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M7 15l4-4 3 3 5-6"/></svg></div>
-            <h3>Asset history</h3>
-            <p>See every repair, service date and note for each asset, so you can spot problem equipment before it fails again.</p>
+            <div class="feature-icon"><svg viewBox="0 0 24 24">
+                <path d="M3 3v18h18" />
+                <path d="M7 15l4-4 3 3 5-6" />
+              </svg></div>
+            <h3>Asset Lifecycle &amp; History</h3>
+            <p>Maintain records of asset details, locations and previous
+              maintenance activities. Review repair history to understand
+              recurring problems and keep asset information organised</p>
           </article>
           <article class="feature reveal">
-            <div class="feature-icon"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></div>
-            <h3>Scheduled notices</h3>
-            <p>Warn residents ahead of water shutdowns, load shedding, fumigation or pool closures, by building or area.</p>
+            <div class="feature-icon"><svg viewBox="0 0 24 24">
+                <rect x="3" y="4" width="18" height="18" rx="2" />
+                <path d="M16 2v4M8 2v4M3 10h18" />
+              </svg></div>
+            <h3>Scheduled Notices</h3>
+            <p>Warn residents ahead of water shutdowns, load shedding, fumigation or pool closures, by building or area.
+            </p>
           </article>
           <article class="feature reveal">
-            <div class="feature-icon"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg></div>
-            <h3>Compliance &amp; safety</h3>
-            <p>Track inspection and certificate due dates for fire equipment, electrical systems and lifts, with reminders before they lapse.</p>
+            <div class="feature-icon"><svg viewBox="0 0 24 24">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                <path d="m9 12 2 2 4-4" />
+              </svg></div>
+            <h3>Compliance &amp; Safety Monitoring</h3>
+            <p>Monitor inspection requirements and certificate due dates.
+              Identify compliant, due-soon and overdue assets so
+              administrators can prioritise inspections and follow-up work.</p>
+          </article>
+
+          <article class="feature reveal">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24">
+                <rect x="3" y="3" width="7" height="7" rx="1" />
+                <rect x="14" y="3" width="7" height="7" rx="1" />
+                <rect x="3" y="14" width="7" height="7" rx="1" />
+                <rect x="14" y="14" width="7" height="7" rx="1" />
+              </svg>
+            </div>
+            <h3>Interactive Residence Flow Map</h3>
+            <p>
+              Visualise maintenance operations through an interactive
+              flow map. Follow the movement of maintenance reports
+              between workflow stages and gain a clearer view of
+              ongoing maintenance activities.
+            </p>
           </article>
         </div>
       </div>
     </section>
 
     <!-- ============ HOW IT WORKS ============ -->
-    <section class="section alt" id="how">
+    <section class="section workflow-section" id="how">
       <div class="container">
-        <div class="section-head reveal">
-          <span class="eyebrow">How it works</span>
-          <h2>From "it's broken" to "it's fixed" in four steps</h2>
+
+        <!-- Introduction at the top -->
+        <div class="workflow-intro reveal">
+          <span class="section-kicker">HOW IT WORKS</span>
+
+          <h2>From report to resolution</h2>
+
+          <p>
+            MainTenant makes maintenance easier to manage and follow,
+            from the initial report through assignment and work
+            progress to resolution.
+          </p>
         </div>
-        <ol class="steps">
-          <li class="step reveal"><span class="step-num">1</span><h3>Scan</h3><p>The resident scans the QR tag on the faulty asset, or enters its ID.</p></li>
-          <li class="step reveal"><span class="step-num">2</span><h3>Report</h3><p>They describe the problem and set a priority. The admin is notified right away.</p></li>
-          <li class="step reveal"><span class="step-num">3</span><h3>Assign</h3><p>The admin assigns an available artisan with the right specialty.</p></li>
-          <li class="step reveal"><span class="step-num">4</span><h3>Resolve</h3><p>The artisan updates progress and closes the job. The asset's history updates on its own.</p></li>
-        </ol>
+
+        <!-- Four steps underneath -->
+        <div class="steps">
+
+          <article class="step reveal">
+            <div class="step-icon" aria-hidden="true">▤</div>
+            <span class="step-number">01</span>
+            <h3>Report</h3>
+            <p>
+              Capture a maintenance issue and its details.
+            </p>
+          </article>
+
+          <div class="step-arrow" aria-hidden="true">→</div>
+
+          <article class="step reveal">
+            <div class="step-icon" aria-hidden="true">♧</div>
+            <span class="step-number">02</span>
+            <h3>Assign</h3>
+            <p>
+              Assign the report according to artisan specialisation
+              and available capacity.
+            </p>
+          </article>
+
+          <div class="step-arrow" aria-hidden="true">→</div>
+
+          <article class="step reveal">
+            <div class="step-icon" aria-hidden="true">⚒</div>
+            <span class="step-number">03</span>
+            <h3>Work</h3>
+            <p>
+              Follow the maintenance report as work progresses
+              through the assigned job.
+            </p>
+          </article>
+
+          <div class="step-arrow" aria-hidden="true">→</div>
+
+          <article class="step reveal">
+            <div class="step-icon" aria-hidden="true">✓</div>
+            <span class="step-number">04</span>
+            <h3>Resolve</h3>
+            <p>
+              Record the outcome, complete the report and retain
+              the maintenance history.
+            </p>
+          </article>
+
+        </div>
       </div>
     </section>
 
@@ -162,22 +293,31 @@
       <div class="container">
         <div class="section-head reveal">
           <span class="eyebrow">Who it's for</span>
-          <h2>One platform, three dashboards</h2>
+          <h2>One platform. Three connected roles.</h2>
+          <p>
+            MainTenant connects residents, artisans and administrators in one
+            maintenance workflow, from reporting faults and assigning repairs
+            to tracking progress and managing residence assets.
+          </p>
         </div>
 
         <div class="tabs reveal">
           <div class="tab-list" role="tablist" aria-label="User roles">
-            <button role="tab" id="tab-resident" aria-controls="panel-resident" aria-selected="true" tabindex="0">Residents</button>
-            <button role="tab" id="tab-artisan" aria-controls="panel-artisan" aria-selected="false" tabindex="-1">Artisans</button>
-            <button role="tab" id="tab-admin" aria-controls="panel-admin" aria-selected="false" tabindex="-1">Admins</button>
+            <button role="tab" id="tab-resident" aria-controls="panel-resident" aria-selected="true"
+              tabindex="0">Residents</button>
+            <button role="tab" id="tab-artisan" aria-controls="panel-artisan" aria-selected="false"
+              tabindex="-1">Artisans</button>
+            <button role="tab" id="tab-admin" aria-controls="panel-admin" aria-selected="false"
+              tabindex="-1">Admins</button>
           </div>
 
           <div class="tab-panel" role="tabpanel" id="panel-resident" aria-labelledby="tab-resident">
             <div>
               <h3>Report it in under a minute</h3>
-              <p>No more chasing the house committee. Residents report faults from their phone and always know where things stand.</p>
+              <p>No more chasing the house committee. Residents report faults from their phone and always know where
+                things stand.</p>
               <ul class="check-list">
-                <li>Scan-to-report with QR codes</li>
+                <li>Submit maintenance reports for residence faults</li>
                 <li>Track active reports and their status</li>
                 <li>See upcoming shutdowns and maintenance notices</li>
               </ul>
@@ -196,12 +336,14 @@
           </div>
           <div class="tab-panel" role="tabpanel" id="panel-admin" aria-labelledby="tab-admin" hidden>
             <div>
-              <h3>See the whole residence at a glance</h3>
-              <p>Admins manage people, rooms and assets, and make sure nothing falls through the cracks.</p>
+              <h3>Manage the residence from one place</h3>
+              <p>Admins manage users, rooms and assets, and make sure nothing falls through the cracks.</p>
               <ul class="check-list">
-                <li>Approve new user sign-ups</li>
+                <li>Review and approve artisan sign-up requests</li>
                 <li>Assign reports and schedule planned maintenance</li>
-                <li>Manage rooms, residences, assets and compliance dates</li>
+                <li>Allocate rooms and manage residence records</li>
+                <li>Manage assets and access their maintenance history</li>
+                <li>Monitor maintenance compliance statuses</li>
               </ul>
             </div>
           </div>
@@ -265,7 +407,10 @@
     <div class="container footer-grid">
       <div>
         <a href="#top" class="brand">
-          <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 32 32"><rect width="32" height="32" rx="8"/><path d="M8 23V10l8 7 8-7v13"/></svg></span>
+          <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 32 32">
+              <rect width="32" height="32" rx="8" />
+              <path d="M8 23V10l8 7 8-7v13" />
+            </svg></span>
           Maintenant
         </a>
         <p class="muted">A Third Year Project by Team 51: smart residence asset and maintenance management.</p>
@@ -284,4 +429,5 @@
 
   <script src="script.js"></script>
 </body>
+
 </html>
