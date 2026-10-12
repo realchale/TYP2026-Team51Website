@@ -311,7 +311,7 @@
               tabindex="-1">Admins</button>
           </div>
 
-          <div class="tab-panel" role="tabpanel" id="panel-resident" aria-labelledby="tab-resident">
+          <div class="tab-panel role-panel" role="tabpanel" id="panel-resident" aria-labelledby="tab-resident">
             <div>
               <h3>Report it in under a minute</h3>
               <p>No more chasing the house committee. Residents report faults from their phone and always know where
@@ -322,8 +322,12 @@
                 <li>See upcoming shutdowns and maintenance notices</li>
               </ul>
             </div>
+            <figure class="phone-frame">
+              <img src="images/resident-dashboard.png" width="336" height="658" loading="lazy"
+                alt="Resident dashboard on a phone, showing report counts, an alerts card, a Report New Issue button and recent reports with their status.">
+            </figure>
           </div>
-          <div class="tab-panel" role="tabpanel" id="panel-artisan" aria-labelledby="tab-artisan" hidden>
+          <div class="tab-panel role-panel" role="tabpanel" id="panel-artisan" aria-labelledby="tab-artisan" hidden>
             <div>
               <h3>A clear job list, every day</h3>
               <p>Artisans see exactly what's assigned to them, where it is, and how urgent it is.</p>
@@ -333,8 +337,12 @@
                 <li>Add work notes and observations to the asset record</li>
               </ul>
             </div>
+            <figure class="phone-frame">
+              <img src="images/artisan-dashboard.png" width="332" height="652" loading="lazy"
+                alt="Artisan dashboard on a phone, showing task counts, a View Job Cards button and a list of recently assigned tasks.">
+            </figure>
           </div>
-          <div class="tab-panel" role="tabpanel" id="panel-admin" aria-labelledby="tab-admin" hidden>
+          <div class="tab-panel role-panel role-panel-wide" role="tabpanel" id="panel-admin" aria-labelledby="tab-admin" hidden>
             <div>
               <h3>Manage the residence from one place</h3>
               <p>Admins manage users, rooms and assets, and make sure nothing falls through the cracks.</p>
@@ -346,18 +354,13 @@
                 <li>Monitor maintenance compliance statuses</li>
               </ul>
             </div>
+            <figure class="shot-frame admin-shot">
+              <div class="shot-bar" aria-hidden="true"><span></span><span></span><span></span></div>
+              <img src="images/admin-overview.jpg" width="584" height="384" loading="lazy"
+                alt="Admin view of artisan capacity, listing each artisan with their specialty and how many open jobs they have against a five-job cap.">
+            </figure>
           </div>
         </div>
-      </div>
-    </section>
-
-    <!-- ============ BENEFITS / NUMBERS ============ -->
-    <section class="section stats-band">
-      <div class="container stats-grid">
-        <div class="stat reveal"><strong>3</strong><span>role-based dashboards</span></div>
-        <div class="stat reveal"><strong>4</strong><span>priority levels, Low to Urgent</span></div>
-        <div class="stat reveal"><strong>1</strong><span>place for every asset's history</span></div>
-        <div class="stat reveal"><strong>6</strong><span>core modules, from assets to compliance</span></div>
       </div>
     </section>
 
@@ -391,7 +394,7 @@
             <p class="member-bio">Designs the API, database and authentication behind the platform.</p>
           </article>
           <article class="member reveal">
-            <div class="avatar" data-initials></div>
+            <div class="avatar" data-initials data-photo="images/member-4.jpg"></div>
             <h3 class="member-name">Team Member</h3>
             <p class="member-role">UI/UX Designer &amp; Tester</p>
             <p class="member-bio">Makes sure reporting a fault takes seconds, and tests every flow before it ships.</p>
