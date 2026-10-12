@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Maintenant · Team 51</title>
+  <meta name="description" content="Maintenant is a Third Year Project by Team 51: a smart residence maintenance system for tracking assets, reporting faults by QR code and managing repairs.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23465fff'/%3E%3Cpath d='M8 23V10l8 7 8-7v13' fill='none' stroke='white' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    // Enables scroll-reveal styles only when JS runs; apply saved theme before paint
+    document.documentElement.classList.add("js");
+    try {
+      var t = localStorage.getItem("maintenant-theme");
+      if (t) document.documentElement.setAttribute("data-theme", t);
+    } catch (e) {}
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header" id="top">
+    <div class="container nav">
+      <a href="#top" class="brand" aria-label="Maintenant home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32"><rect width="32" height="32" rx="8"/><path d="M8 23V10l8 7 8-7v13"/></svg>
+        </span>
+        Maintenant
+      </a>
+
+      <nav class="nav-links" id="nav-links" aria-label="Main">
+        <a href="#features">Features</a>
+        <a href="#how">How it works</a>
+        <a href="#roles">Who it's for</a>
+        <a href="#team" class="btn btn-primary btn-sm nav-cta">Meet the team</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="icon-btn" id="theme-toggle" type="button" aria-label="Toggle dark mode">
+          <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        </button>
+        <button class="icon-btn menu-toggle" id="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <span class="eyebrow">Third Year Project 2026 · Team 51</span>
+          <h1>Every fault reported. <span class="accent">Every repair tracked.</span></h1>
+          <p class="lead">
+            Maintenant is our third-year project: a smart residence maintenance system that replaces
+            WhatsApp groups, paper logbooks and lost spreadsheets with one place where residents report
+            problems, artisans fix them, and admins see everything.
+          </p>
+          <div class="hero-ctas">
+            <a href="#features" class="btn btn-primary">Explore the project</a>
+            <a href="#team" class="btn btn-ghost">Meet the team</a>
+          </div>
+          <ul class="hero-points">
+            <li>Scan a QR code to report</li>
+            <li>Live repair status</li>
+            <li>Full asset history</li>
+          </ul>
+        </div>
+
+        <!-- Illustrative app preview (pure HTML/CSS) -->
+        <div class="hero-visual reveal" aria-hidden="true">
+          <div class="mock-window">
+            <div class="mock-bar"><span></span><span></span><span></span></div>
+            <div class="mock-body">
+              <div class="mock-stats">
+                <div><small>Open reports</small><strong>12</strong></div>
+                <div><small>In progress</small><strong>5</strong></div>
+                <div><small>Completed</small><strong>148</strong></div>
+              </div>
+              <div class="mock-list">
+                <div class="mock-row"><span class="dot dot-urgent"></span><div><b>Geyser leaking</b><small>Block B · Room 204</small></div><em class="pill pill-urgent">Urgent</em></div>
+                <div class="mock-row"><span class="dot dot-progress"></span><div><b>Lift door sticking</b><small>Block A · Lift 1</small></div><em class="pill pill-progress">In progress</em></div>
+                <div class="mock-row"><span class="dot dot-done"></span><div><b>Kitchen light out</b><small>Block C · Floor 3</small></div><em class="pill pill-done">Completed</em></div>
+              </div>
+            </div>
+          </div>
+          <div class="mock-phone">
+            <div class="qr" aria-hidden="true"></div>
+            <small>AST-0001</small>
+            <b>Report a fault</b>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROBLEM ============ -->
+    <section class="section problem">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">The problem we set out to solve</span>
+          <h2>Residence maintenance is still run on chat messages and paper</h2>
+          <p>When reports get lost, small faults turn into expensive breakdowns and nobody knows who was responsible. That's the gap our project addresses.</p>
+        </div>
+        <div class="problem-grid">
+          <div class="problem-card reveal"><h3>Lost reports</h3><p>Faults sent over WhatsApp get buried and never reach the right person.</p></div>
+          <div class="problem-card reveal"><h3>No accountability</h3><p>No record of who was assigned, when they started, or whether the job was done.</p></div>
+          <div class="problem-card reveal"><h3>Unidentified assets</h3><p>"The geyser upstairs" isn't an asset ID. Repairs get delayed by guesswork.</p></div>
+          <div class="problem-card reveal"><h3>Reactive, not preventive</h3><p>Without service history, equipment only gets attention once it fails.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FEATURES ============ -->
+    <section class="section" id="features">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Features</span>
+          <h2>What we built</h2>
+        </div>
+        <div class="feature-grid">
+          <article class="feature reveal">
+            <div class="feature-icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><path d="M14 14h3v3h-3zM20 14v.01M14 20h.01M17 20h4v-3"/></svg></div>
+            <h3>QR &amp; NFC asset tags</h3>
+            <p>Every geyser, pump, lift and light gets a unique ID. Residents scan it and the report already knows what and where.</p>
+          </article>
+          <article class="feature reveal">
+            <div class="feature-icon"><svg viewBox="0 0 24 24"><path d="M12 9v4M12 17h.01"/><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/></svg></div>
+            <h3>Fault reporting</h3>
+            <p>A guided form with category, priority from Low to Urgent, and a description. Residents can follow it until it's closed.</p>
+          </article>
+          <article class="feature reveal">
+            <div class="feature-icon"><svg viewBox="0 0 24 24"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.4-.6-.6-2.4z"/></svg></div>
+            <h3>Work order assignment</h3>
+            <p>Admins assign reports to available artisans by specialty. Artisans update status: In Progress, Awaiting Parts, Completed.</p>
+          </article>
+          <article class="feature reveal">
+            <div class="feature-icon"><svg viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M7 15l4-4 3 3 5-6"/></svg></div>
+            <h3>Asset history</h3>
+            <p>See every repair, service date and note for each asset, so you can spot problem equipment before it fails again.</p>
+          </article>
+          <article class="feature reveal">
+            <div class="feature-icon"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></div>
+            <h3>Scheduled notices</h3>
+            <p>Warn residents ahead of water shutdowns, load shedding, fumigation or pool closures, by building or area.</p>
+          </article>
+          <article class="feature reveal">
+            <div class="feature-icon"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg></div>
+            <h3>Compliance &amp; safety</h3>
+            <p>Track inspection and certificate due dates for fire equipment, electrical systems and lifts, with reminders before they lapse.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ HOW IT WORKS ============ -->
+    <section class="section alt" id="how">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">How it works</span>
+          <h2>From "it's broken" to "it's fixed" in four steps</h2>
+        </div>
+        <ol class="steps">
+          <li class="step reveal"><span class="step-num">1</span><h3>Scan</h3><p>The resident scans the QR tag on the faulty asset, or enters its ID.</p></li>
+          <li class="step reveal"><span class="step-num">2</span><h3>Report</h3><p>They describe the problem and set a priority. The admin is notified right away.</p></li>
+          <li class="step reveal"><span class="step-num">3</span><h3>Assign</h3><p>The admin assigns an available artisan with the right specialty.</p></li>
+          <li class="step reveal"><span class="step-num">4</span><h3>Resolve</h3><p>The artisan updates progress and closes the job. The asset's history updates on its own.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ ROLES (tabs) ============ -->
+    <section class="section" id="roles">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Who it's for</span>
+          <h2>One platform, three dashboards</h2>
+        </div>
+
+        <div class="tabs reveal">
+          <div class="tab-list" role="tablist" aria-label="User roles">
+            <button role="tab" id="tab-resident" aria-controls="panel-resident" aria-selected="true" tabindex="0">Residents</button>
+            <button role="tab" id="tab-artisan" aria-controls="panel-artisan" aria-selected="false" tabindex="-1">Artisans</button>
+            <button role="tab" id="tab-admin" aria-controls="panel-admin" aria-selected="false" tabindex="-1">Admins</button>
+          </div>
+
+          <div class="tab-panel" role="tabpanel" id="panel-resident" aria-labelledby="tab-resident">
+            <div>
+              <h3>Report it in under a minute</h3>
+              <p>No more chasing the house committee. Residents report faults from their phone and always know where things stand.</p>
+              <ul class="check-list">
+                <li>Scan-to-report with QR codes</li>
+                <li>Track active reports and their status</li>
+                <li>See upcoming shutdowns and maintenance notices</li>
+              </ul>
+            </div>
+          </div>
+          <div class="tab-panel" role="tabpanel" id="panel-artisan" aria-labelledby="tab-artisan" hidden>
+            <div>
+              <h3>A clear job list, every day</h3>
+              <p>Artisans see exactly what's assigned to them, where it is, and how urgent it is.</p>
+              <ul class="check-list">
+                <li>Personal task queue sorted by priority</li>
+                <li>One-tap status updates, including Awaiting Parts</li>
+                <li>Add work notes and observations to the asset record</li>
+              </ul>
+            </div>
+          </div>
+          <div class="tab-panel" role="tabpanel" id="panel-admin" aria-labelledby="tab-admin" hidden>
+            <div>
+              <h3>See the whole residence at a glance</h3>
+              <p>Admins manage people, rooms and assets, and make sure nothing falls through the cracks.</p>
+              <ul class="check-list">
+                <li>Approve new user sign-ups</li>
+                <li>Assign reports and schedule planned maintenance</li>
+                <li>Manage rooms, residences, assets and compliance dates</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ BENEFITS / NUMBERS ============ -->
+    <section class="section stats-band">
+      <div class="container stats-grid">
+        <div class="stat reveal"><strong>3</strong><span>role-based dashboards</span></div>
+        <div class="stat reveal"><strong>4</strong><span>priority levels, Low to Urgent</span></div>
+        <div class="stat reveal"><strong>1</strong><span>place for every asset's history</span></div>
+        <div class="stat reveal"><strong>6</strong><span>core modules, from assets to compliance</span></div>
+      </div>
+    </section>
+
+    <!-- ============ MEET OUR TEAM ============ -->
+    <!-- To update a member: edit the name, role and bio below. Initials are generated automatically from the name. -->
+    <section class="section" id="team">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Meet our team</span>
+          <h2>The people behind Maintenant</h2>
+          <p>We're Team 51, a group of students who lived the residence maintenance problem and decided to fix it.</p>
+        </div>
+
+        <div class="team-grid">
+          <article class="member reveal">
+            <div class="avatar" data-initials data-photo="images/member-1.jpg"></div>
+            <h3 class="member-name">Team Member</h3>
+            <p class="member-role">Project Lead</p>
+            <p class="member-bio">Keeps the project on track and owns the product vision.</p>
+          </article>
+          <article class="member reveal">
+            <div class="avatar" data-initials data-photo="images/member-2.jpg"></div>
+            <h3 class="member-name">Team Member</h3>
+            <p class="member-role">Frontend Developer</p>
+            <p class="member-bio">Builds the dashboards residents, artisans and admins use every day.</p>
+          </article>
+          <article class="member reveal">
+            <div class="avatar" data-initials data-photo="images/member-3.jpg"></div>
+            <h3 class="member-name">Team Member</h3>
+            <p class="member-role">Backend Developer</p>
+            <p class="member-bio">Designs the API, database and authentication behind the platform.</p>
+          </article>
+          <article class="member reveal">
+            <div class="avatar" data-initials></div>
+            <h3 class="member-name">Team Member</h3>
+            <p class="member-role">UI/UX Designer &amp; Tester</p>
+            <p class="member-bio">Makes sure reporting a fault takes seconds, and tests every flow before it ships.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="#top" class="brand">
+          <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 32 32"><rect width="32" height="32" rx="8"/><path d="M8 23V10l8 7 8-7v13"/></svg></span>
+          Maintenant
+        </a>
+        <p class="muted">A Third Year Project by Team 51: smart residence asset and maintenance management.</p>
+      </div>
+      <nav aria-label="Footer">
+        <a href="#features">Features</a>
+        <a href="#how">How it works</a>
+        <a href="#team">Our team</a>
+      </nav>
+    </div>
+    <div class="container footer-bottom">
+      <small>&copy; <span id="year"></span> Maintenant · Team 51</small>
+      <a href="#top" class="back-top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
